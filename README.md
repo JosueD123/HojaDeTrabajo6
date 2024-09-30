@@ -41,4 +41,4 @@ Esta API permite gestionar usuarios (crear, listar, actualizar y eliminar). Util
 
 1. Clona el repositorio:
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/JosueD123/HojaDeTrabajo6.git
