@@ -1,0 +1,16 @@
+{
+  "name": "hoja-de-trabajo-6",
+  "version": "1.0.0",
+  "description": "Esta API permite gestionar usuarios (crear, listar, actualizar y eliminar). Utiliza Node.js y Express para manejar las solicitudes.",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  }
+}
