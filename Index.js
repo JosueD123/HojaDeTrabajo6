@@ -73,6 +73,8 @@ app.delete("/users/:dpi", (req, res) => {
 });
 
 // Iniciar el servidor
-app.listen(3000, () => {
-    console.log('API está corriendo en http://localhost:3000');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`API está corriendo en http://localhost:${PORT}`);
 });
+
