@@ -47,3 +47,23 @@ Esta API permite gestionar usuarios (crear, listar, actualizar y eliminar). Util
 
 https://api-usuarios-usuarios.onrender.com
 
+segunda parte de la hoja de trabajo 7
+
+## Endpoints
+
+- **POST /login**: Iniciar sesión para obtener un token JWT.
+  - **Parámetros en el cuerpo**: 
+    - `email` (string, requerido)
+    - `password` (string, requerido)
+  - **Ejemplo de solicitud**:
+    ```json
+    {
+        "email": "juan@example.com",
+        "password": "12345"
+    }
+    ```
+  - **Respuesta**: Retorna un token JWT válido por 30 segundos si las credenciales son correctas.
+
+- **GET /users**: Listar todos los usuarios registrados (protegido).
+- **PUT /users/:dpi**: Actualizar un usuario existente (protegido).
+- **DELETE /users/:dpi**: Eliminar un usuario (protegido).
