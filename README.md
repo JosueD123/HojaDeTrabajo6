@@ -47,7 +47,7 @@ Esta API permite gestionar usuarios (crear, listar, actualizar y eliminar). Util
 
 https://api-usuarios-usuarios.onrender.com
 
-segunda parte de la hoja de trabajo 7
+## SIGUIENTE PARTE DERIVADO DE LA HOJA DE TRABAJO 6 A LA HOJA DE TRABAJO 7
 
 ## Endpoints
 
@@ -67,3 +67,7 @@ segunda parte de la hoja de trabajo 7
 - **GET /users**: Listar todos los usuarios registrados (protegido).
 - **PUT /users/:dpi**: Actualizar un usuario existente (protegido).
 - **DELETE /users/:dpi**: Eliminar un usuario (protegido).
+
+ URL que proporciona RENDER para correrlo localmente de la Hoja de Trabajo 7
+
+ https://hojadetrabajo6-np1t.onrender.com
