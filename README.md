@@ -37,6 +37,13 @@ Esta API permite gestionar usuarios (crear, listar, actualizar y eliminar). Util
     - `dpi` (string, requerido)
   - **Respuesta**: Retorna `204 No Content` si el usuario fue eliminado, o un error si el usuario no existe.
 
+  ## Cambios Realizados
+- **Refactorización a TypeScript:** Se ha convertido el código JavaScript a TypeScript, lo que incluye la adición de tipos explícitos para las funciones y las estructuras de datos, mejorando así la detección de errores en tiempo de compilación.
+- **Autenticación Mejorada:** Implementación de un sistema de autenticación utilizando JWT (JSON Web Tokens) y bcrypt para el hash de contraseñas.
+- **Interfaz de Usuario Definida:** Se han creado interfaces para definir los tipos de datos de los usuarios, lo que hace que el código sea más fácil de entender y mantener.
+- **Middleware de Autenticación:** Se ha creado un middleware para verificar los tokens de autenticación en las rutas protegidas.
+
+
 ## Instrucciones para ejecutar la API localmente
 
 1. Clona el repositorio:
