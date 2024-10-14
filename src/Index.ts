@@ -2,7 +2,7 @@ import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';  
 import jwt from 'jsonwebtoken';  
 import dotenv from 'dotenv';  
-import bcrypt from 'bcrypt';  
+import bcrypt from 'bcryptjs';  
 
 dotenv.config();  
 
@@ -74,7 +74,6 @@ app.post("/users", async (req: Request, res: Response) => {
 });  
 
 app.get("/users", authenticateToken, (req: CustomRequest, res: Response) => {  
-    // Muestra todos los usuarios, excluyendo la contraseña  
     return res.status(200).json(users.map(({ password, ...user }) => user));  
 });  
 
@@ -87,7 +86,6 @@ app.put("/users/:dpi", authenticateToken, async (req: CustomRequest, res: Respon
         return res.status(404).json({ message: "Usuario no encontrado" });  
     }  
 
-    // Solo actualiza campos presentes  
     users[userIndex] = {  
         ...users[userIndex],  
         ...(name !== undefined && { name }),  
@@ -104,7 +102,6 @@ app.delete("/users/:dpi", authenticateToken, (req: CustomRequest, res: Response)
     return res.status(204).send(); // No content  
 });  
 
-// Manejo de errores  
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {  
     console.error(err.stack);  
     res.status(500).send('Algo salió mal!');  
@@ -113,4 +110,4 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 const PORT = process.env.PORT || 3000;  
 app.listen(PORT, () => {  
     console.log(`Servidor corriendo en el puerto ${PORT}`);  
-});
+});  
