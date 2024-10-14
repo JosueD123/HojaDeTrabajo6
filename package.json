@@ -4,7 +4,7 @@
   "description": "Esta API permite gestionar usuarios (crear, listar, actualizar y eliminar). Utiliza Node.js y Express para manejar las solicitudes.",
   "main": "src/Index.js",
   "scripts": {
-    "start": "ts-node-dev src/Index.ts",
+    "start": "ts-node src/Index.ts",
     "build": "tsc" 
   },
   "keywords": [],
@@ -23,7 +23,7 @@
     "@types/express": "^4.17.13",  
     "@types/jsonwebtoken": "^9.0.7",  
     "@types/node": "^22.7.5",  
-    "ts-node-dev": "^2.0.0",  
+    "ts-node": "^2.0.0",  
     "typescript": "^5.6.3"  
   }
 }
